@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 
-import { FaEnvelope , FaGithub, FaLinkedin, FaCode } from 'react-icons/fa'
+import { FaEnvelope, FaGithub, FaLinkedin, FaCode } from 'react-icons/fa'
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -37,9 +37,13 @@ const Contact = () => {
     form.append('message', formData.message)
 
     try {
-      const response = await fetch('https://formsubmit.co/bhavyacreates11@gmail.com', {
+      const response = await fetch('https://formsubmit.co/ajax/bhavyacreates11@gmail.com', {
         method: 'POST',
-        body: form,
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
 
       if (response.ok) {
@@ -85,7 +89,7 @@ const Contact = () => {
               <FaCode className='text-3xl hover:text-[#d97706]' />
             </a>
             <a href="mailto:bhavyacreates11@gmail.com">
-              <FaEnvelope  className='text-3xl hover:text-[#d97706]' />
+              <FaEnvelope className='text-3xl hover:text-[#d97706]' />
             </a>
           </motion.div>
         </div>
