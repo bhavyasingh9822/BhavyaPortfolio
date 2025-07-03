@@ -92,8 +92,6 @@ const Contact = () => {
 
         <div className='flex-1 mt-6 md:mt-0'>
           <form className='bg-[#1E1C1C] p-8  shadow-lg' onSubmit={handleSubmit}
-            action="https://formsubmit.co/bhavyacreates11@gmail.com"
-            method="POST"
           >
             <input className='w-full p-4 mb-4 bg-[#333] text-white '
               value={formData.name}
