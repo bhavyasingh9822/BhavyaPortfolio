@@ -87,7 +87,7 @@ const Projects = () => {
         },
         {
             // title:"AI Powered Tic Tac Toe",
-            decsription:"A Description of project 1",
+            decsription:"An AI-powered Tic-Tac-Toe game built using the Minimax algorithm, enabling the computer to play optimally and never lose. The algorithm explores all possible moves to determine the most strategic one, simulating human-like decision-making. Designed with a clean UI and intelligent gameplay, the AI ensures a challenging experience for players, demonstrating principles of game theory, recursion, and decision trees.",
             image:"tik.png",
             link:"https://minimax-tic-tak-toe.netlify.app/"
         },
